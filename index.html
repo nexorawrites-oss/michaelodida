@@ -6,7 +6,8 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
     <title>
         Michael Odida | Technical Virtual Assistant
@@ -15,11 +16,12 @@
     <!-- SEO -->
 
     <meta name="description"
-        content="Michael Odida - Technical Virtual Assistant, Systems Administrator, Website Manager, and Operations Specialist helping businesses streamline digital operations and workflow systems.">
+        content="Michael Odida - Technical Virtual Assistant, Website Manager, Systems Administrator and Digital Operations Specialist.">
 
     <!-- GOOGLE FONT -->
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
     <!-- FONT AWESOME -->
@@ -40,26 +42,38 @@
         }
 
         body{
+
             font-family:'Inter',sans-serif;
+
             background:#f8fafc;
+
             color:#0f172a;
+
             overflow-x:hidden;
+
         }
 
         :root{
+
             --primary:#f97316;
+            --primary-dark:#ea580c;
+
             --dark:#0f172a;
             --light:#ffffff;
+
             --gray:#64748b;
-            --bg:#f8fafc;
-            --card:#ffffff;
-            --shadow:0 10px 30px rgba(15,23,42,0.08);
-            --radius:24px;
+            --soft:#f1f5f9;
+
+            --shadow:
+            0 10px 30px rgba(15,23,42,0.08);
+
+            --radius:26px;
+
         }
 
         .container{
             width:90%;
-            max-width:1250px;
+            max-width:1240px;
             margin:auto;
         }
 
@@ -72,50 +86,49 @@
             display:block;
         }
 
-        .section-header{
-            text-align:center;
-            margin-bottom:70px;
-        }
-
-        .section-title{
-            font-size:3rem;
-            font-weight:800;
-            margin-bottom:20px;
-            color:var(--dark);
-        }
-
-        .section-subtitle{
-            color:var(--gray);
-            max-width:760px;
-            margin:auto;
-            line-height:1.8;
-            font-size:1.05rem;
-        }
-
-        /* NAVBAR */
+        /* =========================
+           NAVBAR
+        ========================= */
 
         header{
+
             position:fixed;
-            top:0;
+
             width:100%;
+
+            top:0;
+
             z-index:1000;
-            backdrop-filter:blur(15px);
-            background:rgba(255,255,255,0.85);
-            border-bottom:1px solid rgba(0,0,0,0.05);
+
+            background:
+            rgba(255,255,255,0.88);
+
+            backdrop-filter:blur(14px);
+
+            border-bottom:
+            1px solid rgba(0,0,0,0.04);
+
         }
 
         .navbar{
+
             display:flex;
             justify-content:space-between;
             align-items:center;
+
             padding:20px 0;
+
         }
 
         .logo{
+
+            text-decoration:none;
+
             font-size:1.8rem;
             font-weight:900;
-            text-decoration:none;
+
             color:var(--dark);
+
         }
 
         .logo span{
@@ -123,59 +136,96 @@
         }
 
         .nav-links{
+
             display:flex;
-            gap:28px;
+
             list-style:none;
+
+            gap:28px;
+
         }
 
         .nav-links a{
+
             text-decoration:none;
+
             color:var(--dark);
+
             font-weight:600;
+
             transition:0.3s ease;
+
         }
 
         .nav-links a:hover{
             color:var(--primary);
         }
 
-        /* HERO */
+        /* =========================
+           HERO
+        ========================= */
 
         .hero{
+
             min-height:100vh;
+
             display:flex;
             align-items:center;
+
+            padding-top:140px;
+
             background:
             radial-gradient(circle at top right,#fed7aa 0%,transparent 30%),
             linear-gradient(to bottom,#ffffff,#fff7ed);
-            padding-top:120px;
+
         }
 
         .hero-grid{
+
             display:grid;
+
             grid-template-columns:1.1fr 0.9fr;
+
+            gap:70px;
+
             align-items:center;
-            gap:60px;
+
         }
 
         .hero-badge{
+
             display:inline-flex;
+
             align-items:center;
-            gap:10px;
-            padding:12px 20px;
+
+            gap:12px;
+
+            background:white;
+
+            padding:12px 22px;
+
             border-radius:100px;
-            background:#fff;
+
             box-shadow:var(--shadow);
-            margin-bottom:25px;
-            font-weight:600;
+
+            margin-bottom:20px;
+
             color:var(--primary);
+
+            font-weight:700;
+
         }
 
         .hero-title{
-            font-size:4.5rem;
+
+            font-size:4.4rem;
+
             line-height:1.1;
+
             font-weight:900;
-            margin-bottom:30px;
+
+            margin-bottom:28px;
+
         }
 
         .hero-title span{
@@ -183,263 +233,490 @@
         }
 
         .hero-description{
+
             color:var(--gray);
+
             line-height:1.9;
-            font-size:1.1rem;
-            margin-bottom:35px;
+
+            font-size:1.08rem;
+
+            margin-bottom:40px;
+
             max-width:650px;
+
         }
 
         .hero-buttons{
+
             display:flex;
+
             gap:18px;
+
             flex-wrap:wrap;
+
         }
 
         .btn{
+
             display:inline-flex;
+
             align-items:center;
+
             gap:12px;
-            padding:16px 32px;
-            border-radius:16px;
+
             text-decoration:none;
+
+            padding:16px 32px;
+
+            border-radius:18px;
+
             font-weight:700;
+
             transition:0.3s ease;
+
         }
 
         .btn-primary{
+
             background:var(--primary);
+
             color:white;
-            box-shadow:0 10px 25px rgba(249,115,22,0.3);
+
+            box-shadow:
+            0 15px 30px rgba(249,115,22,0.3);
+
         }
 
         .btn-primary:hover{
-            transform:translateY(-4px);
+
+            transform:translateY(-5px);
+
+            background:var(--primary-dark);
+
         }
 
         .btn-outline{
+
             border:2px solid #e2e8f0;
-            color:var(--dark);
+
             background:white;
+
+            color:var(--dark);
+
         }
 
         .btn-outline:hover{
+
             background:var(--dark);
+
             color:white;
+
         }
 
+        /* HERO IMAGE */
+
         .hero-image{
+
             position:relative;
+
+            display:flex;
+
+            justify-content:center;
+
         }
 
         .hero-image img{
-            border-radius:35px;
-            box-shadow:0 30px 60px rgba(0,0,0,0.12);
+
+            width:360px;
+
+            max-width:100%;
+
+            border-radius:32px;
+
+            object-fit:cover;
+
+            box-shadow:
+            0 30px 60px rgba(0,0,0,0.12);
+
         }
 
         .floating-card{
+
             position:absolute;
-            bottom:-25px;
-            left:-30px;
-            background:white;
-            padding:22px;
-            border-radius:22px;
-            box-shadow:var(--shadow);
-            width:280px;
+
+            bottom:-20px;
+            left:-10px;
+
+            width:270px;
+
+            background:
+            rgba(255,255,255,0.95);
+
+            backdrop-filter:blur(14px);
+
+            padding:24px;
+
+            border-radius:24px;
+
+            box-shadow:
+            0 15px 40px rgba(0,0,0,0.08);
+
         }
 
         .floating-card h4{
             margin-bottom:10px;
-            color:var(--dark);
         }
 
         .floating-card p{
+
             color:var(--gray);
-            font-size:0.95rem;
+
+            line-height:1.7;
+
+            font-size:0.94rem;
+
         }
 
-        /* CARDS */
+        /* =========================
+           SECTIONS
+        ========================= */
+
+        .section-header{
+
+            text-align:center;
+
+            margin-bottom:70px;
+
+        }
+
+        .section-title{
+
+            font-size:3rem;
+
+            font-weight:800;
+
+            margin-bottom:20px;
+
+        }
+
+        .section-subtitle{
+
+            color:var(--gray);
+
+            max-width:760px;
+
+            margin:auto;
+
+            line-height:1.9;
+
+        }
+
+        /* GRID */
 
         .grid{
+
             display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+            grid-template-columns:
+            repeat(auto-fit,minmax(320px,1fr));
+
             gap:30px;
+
         }
 
+        /* CARD */
+
         .card{
-            background:var(--card);
+
+            background:white;
+
             border-radius:var(--radius);
+
             padding:40px;
+
             box-shadow:var(--shadow);
+
             transition:0.4s ease;
+
             position:relative;
+
             overflow:hidden;
+
         }
 
         .card:hover{
+
             transform:translateY(-10px);
+
         }
 
         .card::before{
+
             content:'';
+
             position:absolute;
-            width:120px;
-            height:120px;
-            background:rgba(249,115,22,0.08);
+
+            width:140px;
+            height:140px;
+
+            background:
+            rgba(249,115,22,0.05);
+
             border-radius:50%;
-            top:-30px;
-            right:-30px;
+
+            top:-40px;
+            right:-40px;
+
         }
 
         .card-icon{
-            width:70px;
-            height:70px;
-            border-radius:18px;
+
+            width:72px;
+            height:72px;
+
+            border-radius:20px;
+
             background:#fff7ed;
+
             color:var(--primary);
+
             display:flex;
             align-items:center;
             justify-content:center;
+
             font-size:1.7rem;
+
             margin-bottom:25px;
+
         }
 
         .card h3{
+
             margin-bottom:18px;
+
             font-size:1.35rem;
+
         }
 
         .card p{
+
             color:var(--gray);
-            line-height:1.8;
+
+            line-height:1.9;
+
         }
 
-        /* METRICS */
+        /* SHOWCASE IMAGE */
+
+        .showcase-img{
+
+            border-radius:24px;
+
+            overflow:hidden;
+
+            margin-bottom:24px;
+
+            box-shadow:
+            0 20px 40px rgba(0,0,0,0.08);
+
+        }
+
+        /* =========================
+           METRICS
+        ========================= */
 
         .metrics{
-            background:linear-gradient(to right,#ea580c,#fb923c);
+
+            background:
+            linear-gradient(to right,#ea580c,#fb923c);
+
+            border-radius:36px;
+
+            padding:70px;
+
             color:white;
-            border-radius:35px;
-            padding:60px;
+
         }
 
         .metrics-grid{
+
             display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+
+            grid-template-columns:
+            repeat(auto-fit,minmax(200px,1fr));
+
             gap:30px;
+
             text-align:center;
+
         }
 
         .metric h2{
+
             font-size:3rem;
+
             margin-bottom:10px;
+
         }
 
-        .metric p{
-            opacity:0.9;
-        }
-
-        /* SHOWCASE */
-
-        .showcase-img{
-            border-radius:24px;
-            overflow:hidden;
-            margin-bottom:25px;
-            box-shadow:0 20px 40px rgba(0,0,0,0.1);
-        }
-
-        /* CONTACT */
+        /* =========================
+           CONTACT
+        ========================= */
 
         .contact{
+
             background:var(--dark);
+
             color:white;
+
         }
 
         .contact-wrapper{
+
             max-width:850px;
+
             margin:auto;
+
             text-align:center;
+
         }
 
         .contact-form{
+
             margin-top:50px;
+
         }
 
         .form-control{
+
             width:100%;
+
             padding:18px;
+
             border:none;
-            border-radius:16px;
+
+            border-radius:18px;
+
             margin-bottom:20px;
+
             background:#1e293b;
+
             color:white;
+
             font-family:inherit;
+
         }
 
         textarea{
+
             min-height:160px;
+
             resize:none;
+
         }
 
-        /* FOOTER */
+        /* =========================
+           FOOTER
+        ========================= */
 
         footer{
+
             background:#020617;
+
             color:#94a3b8;
-            padding:40px 0;
+
+            padding:45px 0;
+
             text-align:center;
+
         }
 
         .socials{
+
             display:flex;
+
             justify-content:center;
+
             gap:18px;
+
             margin-top:20px;
+
         }
 
         .socials a{
-            width:48px;
-            height:48px;
+
+            width:50px;
+            height:50px;
+
             border-radius:50%;
+
             background:#0f172a;
+
+            color:white;
+
             display:flex;
             align-items:center;
             justify-content:center;
-            color:white;
+
             text-decoration:none;
+
             transition:0.3s ease;
+
         }
 
         .socials a:hover{
+
             background:var(--primary);
+
         }
 
-        /* RESPONSIVE */
+        /* =========================
+           RESPONSIVE
+        ========================= */
 
         @media(max-width:950px){
 
             .hero-grid{
+
                 grid-template-columns:1fr;
+
                 text-align:center;
-            }
 
-            .hero-description{
-                margin:auto auto 35px;
-            }
-
-            .hero-buttons{
-                justify-content:center;
             }
 
             .hero-title{
+
                 font-size:3rem;
+
+            }
+
+            .hero-buttons{
+
+                justify-content:center;
+
+            }
+
+            .hero-description{
+
+                margin:auto auto 35px;
+
+            }
+
+            .hero-image img{
+
+                width:280px;
+
             }
 
             .floating-card{
+
                 position:relative;
+
                 left:0;
                 bottom:0;
-                margin:30px auto 0;
+
+                margin:25px auto 0;
+
             }
 
             .nav-links{
@@ -458,14 +735,18 @@
 
 <body>
 
-<!-- NAVBAR -->
+<!-- =========================
+NAVBAR
+========================= -->
 
 <header>
 
     <div class="container navbar">
 
         <a href="#" class="logo">
+
             Michael<span>Odida</span>
+
         </a>
 
         <ul class="nav-links">
@@ -476,9 +757,9 @@
 
             <li><a href="#education">Education</a></li>
 
-            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#virtual-assistant">Virtual Assistance</a></li>
 
-            <li><a href="#showcase">Web Projects</a></li>
+            <li><a href="#showcase">Projects</a></li>
 
             <li><a href="#contact">Contact</a></li>
 
@@ -488,18 +769,31 @@
 
 </header>
 
-<!-- HERO -->
+<!-- =========================
+HERO
+========================= -->
 
 <section class="hero">
 
     <div class="container hero-grid">
+
+        <!-- LEFT -->
 
         <div>
 
             <div class="hero-badge">
 
                 <i class="fa-solid fa-bolt"></i>
+
                 Technical Virtual Assistant & Systems Specialist
+
+            </div>
+
+            <div class="hero-badge">
+
+                <i class="fa-solid fa-headset"></i>
+
+                Advanced Certified Virtual Assistant
 
             </div>
 
@@ -514,28 +808,32 @@
             <p class="hero-description">
 
                 Hi, I'm Michael Odida — a Technical Virtual Assistant,
-                Systems Administrator,
                 Website Manager,
-                and BBIT graduate with experience in IT operations,
+                Systems Administrator,
+                and BBIT graduate from Strathmore University with experience in IT operations,
                 executive coordination,
                 workflow optimization,
-                website administration,
-                and digital systems support helping organizations improve efficiency and operational performance.
+                website management,
+                and digital systems support.
 
             </p>
 
             <div class="hero-buttons">
 
-                <a href="#contact" class="btn btn-primary">
+                <a href="#contact"
+                    class="btn btn-primary">
 
                     <i class="fa-solid fa-paper-plane"></i>
+
                     Hire Me
 
                 </a>
 
-                <a href="#" class="btn btn-outline">
+                <a href="#"
+                    class="btn btn-outline">
 
                     <i class="fa-solid fa-download"></i>
+
                     Download CV
 
                 </a>
@@ -544,9 +842,13 @@
 
         </div>
 
+        <!-- RIGHT -->
+
         <div class="hero-image">
 
-            <img src="images/pic.jpeg" alt="Michael Odida">
+            <img
+                src="images/pic.jpeg"
+                alt="Michael Odida">
 
             <div class="floating-card">
 
@@ -555,8 +857,10 @@
                 </h4>
 
                 <p>
+
                     Managed and supported digital operations for
                     Baraka HealthNet website and organizational systems.
+
                 </p>
 
             </div>
@@ -567,7 +871,9 @@
 
 </section>
 
-<!-- SERVICES -->
+<!-- =========================
+SERVICES
+========================= -->
 
 <section id="services">
 
@@ -581,9 +887,10 @@
 
             <p class="section-subtitle">
 
-                Delivering modern operational,
-                technical,
-                and executive support solutions for organizations and growing businesses.
+                Delivering technical,
+                operational,
+                executive,
+                and digital support solutions for modern businesses and organizations.
 
             </p>
 
@@ -600,11 +907,13 @@
                 <h3>Technical Operations</h3>
 
                 <p>
+
                     Technical support,
                     systems coordination,
                     workflow optimization,
                     infrastructure assistance,
                     and operational management support.
+
                 </p>
 
             </div>
@@ -618,10 +927,12 @@
                 <h3>Website Management</h3>
 
                 <p>
+
                     Website administration,
                     content updates,
                     digital platform coordination,
                     and online communication management.
+
                 </p>
 
             </div>
@@ -629,17 +940,20 @@
             <div class="card">
 
                 <div class="card-icon">
-                    <i class="fa-solid fa-business-time"></i>
+                    <i class="fa-solid fa-headset"></i>
                 </div>
 
-                <h3>Executive Coordination</h3>
+                <h3>Virtual Assistance</h3>
 
                 <p>
-                    Scheduling,
-                    reporting,
-                    stakeholder communication,
-                    workflow coordination,
-                    and operational support services.
+
+                    Professional remote support including executive scheduling,
+                    email coordination,
+                    communication management,
+                    digital administration,
+                    workflow organization,
+                    and productivity support.
+
                 </p>
 
             </div>
@@ -650,9 +964,11 @@
 
 </section>
 
-<!-- WHY ME -->
+<!-- =========================
+WHY ME
+========================= -->
 
-<section id="why-me" style="background:white;">
+<section id="why-me">
 
     <div class="container">
 
@@ -675,9 +991,11 @@
                 <h3>Results Driven</h3>
 
                 <p>
+
                     Focused on operational efficiency,
-                    workflow improvement,
-                    and structured digital systems management.
+                    workflow optimization,
+                    and digital performance improvement.
+
                 </p>
 
             </div>
@@ -691,10 +1009,12 @@
                 <h3>Professional & Reliable</h3>
 
                 <p>
-                    Strong attention to communication,
-                    confidentiality,
+
+                    Strong communication,
                     organization,
-                    and deadline management.
+                    confidentiality,
+                    and deadline management skills.
+
                 </p>
 
             </div>
@@ -708,10 +1028,12 @@
                 <h3>Modern Digital Skills</h3>
 
                 <p>
-                    Experienced in cloud systems,
-                    digital operations,
+
+                    Experienced in remote collaboration,
+                    cloud systems,
                     website management,
-                    and remote workflow coordination.
+                    and digital operations support.
+
                 </p>
 
             </div>
@@ -722,7 +1044,9 @@
 
 </section>
 
-<!-- METRICS -->
+<!-- =========================
+METRICS
+========================= -->
 
 <section>
 
@@ -735,6 +1059,7 @@
                 <div class="metric">
 
                     <h2>6+</h2>
+
                     <p>Years Experience</p>
 
                 </div>
@@ -742,6 +1067,7 @@
                 <div class="metric">
 
                     <h2>15+</h2>
+
                     <p>Projects Supported</p>
 
                 </div>
@@ -749,6 +1075,7 @@
                 <div class="metric">
 
                     <h2>40%</h2>
+
                     <p>Workflow Efficiency Improvement</p>
 
                 </div>
@@ -756,6 +1083,7 @@
                 <div class="metric">
 
                     <h2>100%</h2>
+
                     <p>Professional Commitment</p>
 
                 </div>
@@ -768,16 +1096,20 @@
 
 </section>
 
-<!-- EDUCATION -->
+<!-- =========================
+EDUCATION
+========================= -->
 
-<section id="education" style="background:white;">
+<section id="education">
 
     <div class="container">
 
         <div class="section-header">
 
             <h2 class="section-title">
+
                 Education & Certifications
+
             </h2>
 
         </div>
@@ -787,10 +1119,14 @@
             <div class="card">
 
                 <div class="card-icon">
+
                     <i class="fa-solid fa-graduation-cap"></i>
+
                 </div>
 
-                <h3>Strathmore University</h3>
+                <h3>
+                    Strathmore University
+                </h3>
 
                 <p>
 
@@ -811,10 +1147,14 @@
             <div class="card">
 
                 <div class="card-icon">
+
                     <i class="fa-solid fa-certificate"></i>
+
                 </div>
 
-                <h3>Advanced Virtual Assistant Certification</h3>
+                <h3>
+                    Advanced Virtual Assistant Certification
+                </h3>
 
                 <p>
 
@@ -834,14 +1174,11 @@
 
 </section>
 
-```html id="virtualassistantimage"
 <!-- =========================
-ADD THIS NEW SECTION
-BELOW HERO SECTION
-FOR VISUAL ASSISTANT IMAGE
+VIRTUAL ASSISTANT SHOWCASE
 ========================= -->
 
-<section id="virtual-assistant-showcase">
+<section id="virtual-assistant">
 
     <div class="container">
 
@@ -856,12 +1193,12 @@ FOR VISUAL ASSISTANT IMAGE
             <p class="section-subtitle">
 
                 Supporting executives,
-                organizations,
                 startups,
-                and businesses through professional remote assistance,
-                digital coordination,
-                workflow management,
-                and technical operations support.
+                businesses,
+                and organizations through professional remote assistance,
+                workflow coordination,
+                digital administration,
+                and operational support.
 
             </p>
 
@@ -869,14 +1206,12 @@ FOR VISUAL ASSISTANT IMAGE
 
         <div class="grid">
 
-            <!-- IMAGE CARD -->
-
             <div class="card">
 
                 <div class="showcase-img">
 
                     <img
-                        src="images/virtual-assistant.jpg"
+                        src="images/virtual_assistant_image.png"
                         alt="Virtual Assistant">
 
                 </div>
@@ -891,25 +1226,22 @@ FOR VISUAL ASSISTANT IMAGE
 
                     Providing remote executive support,
                     scheduling,
-                    workflow coordination,
-                    communication management,
-                    digital operations,
-                    administrative assistance,
-                    and productivity optimization for modern organizations.
+                    communication handling,
+                    digital administration,
+                    workflow management,
+                    and productivity coordination.
 
                 </p>
 
             </div>
-
-            <!-- SECOND IMAGE -->
 
             <div class="card">
 
                 <div class="showcase-img">
 
                     <img
-                        src="images/remote-support.jpg"
-                        alt="Remote Operations Support">
+                        src="images/remote_operations_image.png"
+                        alt="Remote Operations">
 
                 </div>
 
@@ -921,11 +1253,11 @@ FOR VISUAL ASSISTANT IMAGE
 
                 <p>
 
-                    Experienced in handling remote collaboration,
-                    digital systems support,
+                    Experienced in remote collaboration,
+                    operational coordination,
                     reporting workflows,
-                    project coordination,
-                    and operational communication management.
+                    executive support,
+                    and digital systems management.
 
                 </p>
 
@@ -937,74 +1269,9 @@ FOR VISUAL ASSISTANT IMAGE
 
 </section>
 
-
-
 <!-- =========================
-ADD THIS NAVIGATION LINK
-INSIDE nav-links
+PROJECT SHOWCASE
 ========================= -->
-
-<li>
-    <a href="#virtual-assistant-showcase">
-        Virtual Assistance
-    </a>
-</li>
-
-
-
-<!-- =========================
-OPTIONAL:
-ADD THIS HERO BADGE
-UNDER EXISTING HERO BADGE
-========================= -->
-
-<div class="hero-badge">
-
-    <i class="fa-solid fa-headset"></i>
-
-    Advanced Certified Virtual Assistant
-
-</div>
-
-
-
-<!-- =========================
-OPTIONAL:
-ADD THIS SERVICE CARD
-INSIDE SERVICES GRID
-========================= -->
-
-<div class="card">
-
-    <div class="card-icon">
-
-        <i class="fa-solid fa-headset"></i>
-
-    </div>
-
-    <h3>
-
-        Virtual Assistance
-
-    </h3>
-
-    <p>
-
-        Professional remote support including
-        executive scheduling,
-        communication handling,
-        email coordination,
-        digital administration,
-        workflow management,
-        and productivity support.
-
-    </p>
-
-</div>
-```
-
-
-<!-- SHOWCASE -->
 
 <section id="showcase">
 
@@ -1013,7 +1280,9 @@ INSIDE SERVICES GRID
         <div class="section-header">
 
             <h2 class="section-title">
+
                 Website & Digital Projects
+
             </h2>
 
         </div>
@@ -1024,13 +1293,16 @@ INSIDE SERVICES GRID
 
                 <div class="showcase-img">
 
-                    <img src="images/evid.png"
+                    <img
+                        src="images/evid.png"
                         alt="Baraka HealthNet">
 
                 </div>
 
                 <h3>
+
                     Baraka HealthNet Website Management
+
                 </h3>
 
                 <p>
@@ -1054,13 +1326,16 @@ INSIDE SERVICES GRID
 
                 <div class="showcase-img">
 
-                    <img src="images/2.png"
-                        alt="Executive Dashboard">
+                    <img
+                        src="images/2.png"
+                        alt="Dashboard">
 
                 </div>
 
                 <h3>
+
                     Executive Dashboard Coordination
+
                 </h3>
 
                 <p>
@@ -1080,9 +1355,12 @@ INSIDE SERVICES GRID
 
 </section>
 
-<!-- CONTACT -->
+<!-- =========================
+CONTACT
+========================= -->
 
-<section class="contact" id="contact">
+<section class="contact"
+    id="contact">
 
     <div class="container">
 
@@ -1090,11 +1368,15 @@ INSIDE SERVICES GRID
 
             <div class="section-header">
 
-                <h2 class="section-title" style="color:white;">
+                <h2 class="section-title"
+                    style="color:white;">
+
                     Let's Work Together
+
                 </h2>
 
-                <p class="section-subtitle" style="color:#cbd5e1;">
+                <p class="section-subtitle"
+                    style="color:#cbd5e1;">
 
                     Ready to improve your digital operations,
                     streamline workflows,
@@ -1116,11 +1398,12 @@ INSIDE SERVICES GRID
 
                 <textarea
                     class="form-control"
-                    placeholder="Tell me about your project or business needs"></textarea>
+                    placeholder="Tell me about your project"></textarea>
 
                 <button class="btn btn-primary">
 
                     <i class="fa-solid fa-paper-plane"></i>
+
                     Send Message
 
                 </button>
@@ -1133,20 +1416,25 @@ INSIDE SERVICES GRID
 
 </section>
 
-<!-- FOOTER -->
+<!-- =========================
+FOOTER
+========================= -->
 
 <footer>
 
     <div class="container">
 
         <h3 style="color:white; margin-bottom:10px;">
+
             Michael Odida
+
         </h3>
 
         <p>
-            Technical Virtual Assistant • Systems Administrator • Website Manager
+
+            Technical Virtual Assistant • Website Manager • Systems Administrator
+
         </p>
-        
 
         <div class="socials">
 
@@ -1165,7 +1453,9 @@ INSIDE SERVICES GRID
         </div>
 
         <p style="margin-top:30px;">
+
             © 2026 Michael Odida. All Rights Reserved.
+
         </p>
 
     </div>
@@ -1175,4 +1465,4 @@ INSIDE SERVICES GRID
 </body>
 
 </html>
-```
+
